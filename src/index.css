@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+  .input-area {
+    @apply flex flex-col w-full
+  }
+  .warning-area {
+    @apply text-red-400 text-sm self-start
+  }
+  .input-field {
+    @apply py-2 px-5 rounded-sm text-gray-600 text-sm md:text-lg w-full shadow-md
+  }
 }
